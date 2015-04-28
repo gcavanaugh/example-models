@@ -46,7 +46,7 @@ model {
   log_Phi_alpha_times_sigma <- log(Phi(alpha * sigma));
   for (i in 1:N) {  
     if (theta > x[i]) 
-      lpa[i] <- ( log_tmp,
+      lpa[i] <- ( log_tmp
                   + neg_log1p_temp
                   - log_Phi_alpha_times_sigma
                   + lognormal_log(x[i], mu, sigma) ); 
